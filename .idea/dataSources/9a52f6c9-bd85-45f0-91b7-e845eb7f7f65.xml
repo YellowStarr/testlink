@@ -1,0 +1,2304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - testlink@172.16.1.254">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="testlink">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="confluence"/>
+    <schema id="3" name="information_schema"/>
+    <schema id="4" name="jira"/>
+    <schema id="5" name="mysql"/>
+    <schema id="6" name="own_cloud"/>
+    <schema id="7" name="performance_schema"/>
+    <schema id="8" name="sys"/>
+    <schema id="9" name="wanqian_mall"/>
+    <schema id="10" name="zkui"/>
+    <table id="11" parent="1" name="assignment_status"/>
+    <table id="12" parent="1" name="assignment_types"/>
+    <table id="13" parent="1" name="attachments"/>
+    <table id="14" parent="1" name="builds">
+      <comment>Available builds</comment>
+    </table>
+    <table id="15" parent="1" name="cfield_build_design_values"/>
+    <table id="16" parent="1" name="cfield_design_values"/>
+    <table id="17" parent="1" name="cfield_execution_values"/>
+    <table id="18" parent="1" name="cfield_node_types"/>
+    <table id="19" parent="1" name="cfield_testplan_design_values"/>
+    <table id="20" parent="1" name="cfield_testprojects"/>
+    <table id="21" parent="1" name="codetrackers"/>
+    <table id="22" parent="1" name="custom_fields"/>
+    <table id="23" parent="1" name="db_version"/>
+    <table id="24" parent="1" name="events"/>
+    <table id="25" parent="1" name="execution_bugs"/>
+    <table id="26" parent="1" name="execution_tcsteps"/>
+    <table id="27" parent="1" name="executions"/>
+    <table id="28" parent="1" name="inventory"/>
+    <table id="29" parent="1" name="issuetrackers"/>
+    <table id="30" parent="1" name="keywords"/>
+    <table id="31" parent="1" name="milestones"/>
+    <table id="32" parent="1" name="node_types"/>
+    <table id="33" parent="1" name="nodes_hierarchy"/>
+    <table id="34" parent="1" name="object_keywords"/>
+    <table id="35" parent="1" name="platforms"/>
+    <table id="36" parent="1" name="plugins"/>
+    <table id="37" parent="1" name="plugins_configuration"/>
+    <table id="38" parent="1" name="req_coverage">
+      <comment>relation test case ** requirements</comment>
+    </table>
+    <table id="39" parent="1" name="req_monitor"/>
+    <table id="40" parent="1" name="req_relations"/>
+    <table id="41" parent="1" name="req_revisions"/>
+    <table id="42" parent="1" name="req_specs">
+      <comment>Dev. Documents (e.g. System Requirements Specification)</comment>
+    </table>
+    <table id="43" parent="1" name="req_specs_revisions"/>
+    <table id="44" parent="1" name="req_versions"/>
+    <table id="45" parent="1" name="reqmgrsystems"/>
+    <table id="46" parent="1" name="requirements"/>
+    <table id="47" parent="1" name="rights"/>
+    <table id="48" parent="1" name="risk_assignments"/>
+    <table id="49" parent="1" name="role_rights"/>
+    <table id="50" parent="1" name="roles"/>
+    <table id="51" parent="1" name="tcsteps"/>
+    <table id="52" parent="1" name="tcversions"/>
+    <table id="53" parent="1" name="testcase_keywords"/>
+    <table id="54" parent="1" name="testcase_relations"/>
+    <table id="55" parent="1" name="testcase_script_links"/>
+    <table id="56" parent="1" name="testplan_platforms">
+      <comment>Connects a testplan with platforms</comment>
+    </table>
+    <table id="57" parent="1" name="testplan_tcversions"/>
+    <table id="58" parent="1" name="testplans"/>
+    <table id="59" parent="1" name="testproject_codetracker"/>
+    <table id="60" parent="1" name="testproject_issuetracker"/>
+    <table id="61" parent="1" name="testproject_reqmgrsystem"/>
+    <table id="62" parent="1" name="testprojects"/>
+    <table id="63" parent="1" name="testsuites"/>
+    <table id="64" parent="1" name="text_templates">
+      <comment>Global Project Templates</comment>
+    </table>
+    <table id="65" parent="1" name="transactions"/>
+    <table id="66" parent="1" name="user_assignments"/>
+    <table id="67" parent="1" name="user_group"/>
+    <table id="68" parent="1" name="user_group_assign"/>
+    <table id="69" parent="1" name="user_testplan_roles"/>
+    <table id="70" parent="1" name="user_testproject_roles"/>
+    <table id="71" parent="1" name="users">
+      <comment>User information</comment>
+    </table>
+    <view id="72" parent="1" name="latest_req_version">
+      <comment>VIEW</comment>
+    </view>
+    <view id="73" parent="1" name="latest_rspec_revision">
+      <comment>VIEW</comment>
+    </view>
+    <view id="74" parent="1" name="latest_tcase_version_number">
+      <comment>VIEW</comment>
+    </view>
+    <column id="75" parent="11" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="76" parent="11" name="description">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+      <default-expression>&apos;unknown&apos;</default-expression>
+    </column>
+    <key id="77" parent="11" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="78" parent="12" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="79" parent="12" name="fk_table">
+      <data-type>varchar(30)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="80" parent="12" name="description">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+      <default-expression>&apos;unknown&apos;</default-expression>
+    </column>
+    <key id="81" parent="12" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="82" parent="13" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="83" parent="13" name="fk_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="84" parent="13" name="fk_table">
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="85" parent="13" name="title">
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="86" parent="13" name="description">
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="87" parent="13" name="file_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="88" parent="13" name="file_path">
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="89" parent="13" name="file_size">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="90" parent="13" name="file_type">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="91" parent="13" name="date_added">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="92" parent="13" name="content">
+      <data-type>longblob|0</data-type>
+    </column>
+    <column id="93" parent="13" name="compression_type">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="94" parent="13" name="attachments_idx1">
+      <columns>fk_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="95" parent="13" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="96" parent="14" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="97" parent="14" name="testplan_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="98" parent="14" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+      <default-expression>&apos;undefined&apos;</default-expression>
+    </column>
+    <column id="99" parent="14" name="notes">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="100" parent="14" name="active">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="101" parent="14" name="is_open">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="102" parent="14" name="author_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="103" parent="14" name="creation_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="104" parent="14" name="release_date">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="105" parent="14" name="closed_on_date">
+      <data-type>date|0</data-type>
+    </column>
+    <index id="106" parent="14" name="name">
+      <columns>testplan_id
+name</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="107" parent="14" name="testplan_id">
+      <columns>testplan_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="108" parent="14" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="109" parent="14" name="name">
+      <columns>testplan_id
+name</columns>
+      <underlying-index>name</underlying-index>
+    </key>
+    <column id="110" parent="15" name="field_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="111" parent="15" name="node_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="112" parent="15" name="value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(4000)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <index id="113" parent="15" name="idx_cfield_build_design_values">
+      <columns>node_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="114" parent="15" name="PRIMARY">
+      <columns>field_id
+node_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="115" parent="16" name="field_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="116" parent="16" name="node_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="117" parent="16" name="value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(4000)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <index id="118" parent="16" name="idx_cfield_design_values">
+      <columns>node_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="119" parent="16" name="PRIMARY">
+      <columns>field_id
+node_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="120" parent="17" name="field_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="121" parent="17" name="execution_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="122" parent="17" name="testplan_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="123" parent="17" name="tcversion_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="124" parent="17" name="value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(4000)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <key id="125" parent="17" name="PRIMARY">
+      <columns>field_id
+execution_id
+testplan_id
+tcversion_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="126" parent="18" name="field_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="127" parent="18" name="node_type_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="128" parent="18" name="idx_custom_fields_assign">
+      <columns>node_type_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="129" parent="18" name="PRIMARY">
+      <columns>field_id
+node_type_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="130" parent="19" name="field_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="131" parent="19" name="link_id">
+      <comment>point to testplan_tcversion id</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="132" parent="19" name="value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(4000)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <index id="133" parent="19" name="idx_cfield_tplan_design_val">
+      <columns>link_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="134" parent="19" name="PRIMARY">
+      <columns>field_id
+link_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="135" parent="20" name="field_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="136" parent="20" name="testproject_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="137" parent="20" name="display_order">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="138" parent="20" name="location">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="139" parent="20" name="active">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="140" parent="20" name="required">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="141" parent="20" name="required_on_design">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="142" parent="20" name="required_on_execution">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="143" parent="20" name="monitorable">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="144" parent="20" name="PRIMARY">
+      <columns>field_id
+testproject_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="145" parent="21" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="146" parent="21" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="147" parent="21" name="type">
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="148" parent="21" name="cfg">
+      <data-type>text|0</data-type>
+    </column>
+    <index id="149" parent="21" name="codetrackers_uidx1">
+      <columns>name</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="150" parent="21" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="151" parent="21" name="codetrackers_uidx1">
+      <columns>name</columns>
+      <underlying-index>codetrackers_uidx1</underlying-index>
+    </key>
+    <column id="152" parent="22" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="153" parent="22" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="154" parent="22" name="label">
+      <comment>label to display on user interface</comment>
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="155" parent="22" name="type">
+      <mandatory>1</mandatory>
+      <data-type>smallint(6)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="156" parent="22" name="possible_values">
+      <mandatory>1</mandatory>
+      <data-type>varchar(4000)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="157" parent="22" name="default_value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(4000)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="158" parent="22" name="valid_regexp">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="159" parent="22" name="length_min">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="160" parent="22" name="length_max">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="161" parent="22" name="show_on_design">
+      <comment>1=&gt; show it during specification design</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="162" parent="22" name="enable_on_design">
+      <comment>1=&gt; user can write/manage it during specification design</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="163" parent="22" name="show_on_execution">
+      <comment>1=&gt; show it during test case execution</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="164" parent="22" name="enable_on_execution">
+      <comment>1=&gt; user can write/manage it during test case execution</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="165" parent="22" name="show_on_testplan_design">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="166" parent="22" name="enable_on_testplan_design">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="167" parent="22" name="idx_custom_fields_name">
+      <columns>name</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="168" parent="22" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="169" parent="22" name="idx_custom_fields_name">
+      <columns>name</columns>
+      <underlying-index>idx_custom_fields_name</underlying-index>
+    </key>
+    <column id="170" parent="23" name="version">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+      <default-expression>&apos;unknown&apos;</default-expression>
+    </column>
+    <column id="171" parent="23" name="upgrade_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="172" parent="23" name="notes">
+      <data-type>text|0</data-type>
+    </column>
+    <key id="173" parent="23" name="PRIMARY">
+      <columns>version</columns>
+      <primary>1</primary>
+    </key>
+    <column id="174" parent="24" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="175" parent="24" name="transaction_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="176" parent="24" name="log_level">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="177" parent="24" name="source">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="178" parent="24" name="description">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="179" parent="24" name="fired_at">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="180" parent="24" name="activity">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="181" parent="24" name="object_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="182" parent="24" name="object_type">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <index id="183" parent="24" name="fired_at">
+      <columns>fired_at</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="184" parent="24" name="transaction_id">
+      <columns>transaction_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="185" parent="24" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="186" parent="25" name="execution_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="187" parent="25" name="bug_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="188" parent="25" name="tcstep_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="189" parent="25" name="PRIMARY">
+      <columns>execution_id
+bug_id
+tcstep_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="190" parent="26" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="191" parent="26" name="execution_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="192" parent="26" name="tcstep_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="193" parent="26" name="notes">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="194" parent="26" name="status">
+      <data-type>char(1)|0</data-type>
+    </column>
+    <index id="195" parent="26" name="execution_tcsteps_idx1">
+      <columns>execution_id
+tcstep_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="196" parent="26" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="197" parent="26" name="execution_tcsteps_idx1">
+      <columns>execution_id
+tcstep_id</columns>
+      <underlying-index>execution_tcsteps_idx1</underlying-index>
+    </key>
+    <column id="198" parent="27" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="199" parent="27" name="build_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="200" parent="27" name="tester_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="201" parent="27" name="execution_ts">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="202" parent="27" name="status">
+      <data-type>char(1)|0</data-type>
+    </column>
+    <column id="203" parent="27" name="testplan_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="204" parent="27" name="tcversion_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="205" parent="27" name="tcversion_number">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="206" parent="27" name="platform_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="207" parent="27" name="execution_type">
+      <comment>1 -&gt; manual, 2 -&gt; automated</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="208" parent="27" name="execution_duration">
+      <comment>NULL will be considered as NO DATA Provided by user</comment>
+      <data-type>decimal(6,2)|0</data-type>
+    </column>
+    <column id="209" parent="27" name="notes">
+      <data-type>text|0</data-type>
+    </column>
+    <index id="210" parent="27" name="executions_idx1">
+      <columns>testplan_id
+tcversion_id
+platform_id
+build_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="211" parent="27" name="executions_idx2">
+      <columns>execution_type</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="212" parent="27" name="executions_idx3">
+      <columns>tcversion_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="213" parent="27" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="214" parent="28" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="215" parent="28" name="testproject_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="216" parent="28" name="owner_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="217" parent="28" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="218" parent="28" name="ipaddress">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="219" parent="28" name="content">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="220" parent="28" name="creation_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="221" parent="28" name="modification_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="222" parent="28" name="inventory_idx1">
+      <columns>testproject_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="223" parent="28" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="224" parent="29" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="225" parent="29" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="226" parent="29" name="type">
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="227" parent="29" name="cfg">
+      <data-type>text|0</data-type>
+    </column>
+    <index id="228" parent="29" name="issuetrackers_uidx1">
+      <columns>name</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="229" parent="29" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="230" parent="29" name="issuetrackers_uidx1">
+      <columns>name</columns>
+      <underlying-index>issuetrackers_uidx1</underlying-index>
+    </key>
+    <column id="231" parent="30" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="232" parent="30" name="keyword">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="233" parent="30" name="testproject_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="234" parent="30" name="notes">
+      <data-type>text|0</data-type>
+    </column>
+    <index id="235" parent="30" name="keyword">
+      <columns>keyword</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="236" parent="30" name="testproject_id">
+      <columns>testproject_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="237" parent="30" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="238" parent="31" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="239" parent="31" name="testplan_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="240" parent="31" name="target_date">
+      <data-type>date|0</data-type>
+    </column>
+    <column id="241" parent="31" name="start_date">
+      <mandatory>1</mandatory>
+      <data-type>date|0</data-type>
+    </column>
+    <column id="242" parent="31" name="a">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="243" parent="31" name="b">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="244" parent="31" name="c">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(3) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="245" parent="31" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+      <default-expression>&apos;undefined&apos;</default-expression>
+    </column>
+    <index id="246" parent="31" name="name_testplan_id">
+      <columns>name
+testplan_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="247" parent="31" name="testplan_id">
+      <columns>testplan_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="248" parent="31" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="249" parent="31" name="name_testplan_id">
+      <columns>name
+testplan_id</columns>
+      <underlying-index>name_testplan_id</underlying-index>
+    </key>
+    <column id="250" parent="32" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="251" parent="32" name="description">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+      <default-expression>&apos;testproject&apos;</default-expression>
+    </column>
+    <key id="252" parent="32" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="253" parent="33" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="254" parent="33" name="name">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="255" parent="33" name="parent_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="256" parent="33" name="node_type_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="257" parent="33" name="node_order">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="258" parent="33" name="pid_m_nodeorder">
+      <columns>parent_id
+node_order</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="259" parent="33" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="260" parent="34" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="261" parent="34" name="fk_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="262" parent="34" name="fk_table">
+      <data-type>varchar(30)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="263" parent="34" name="keyword_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="264" parent="34" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="265" parent="35" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="266" parent="35" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="267" parent="35" name="testproject_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="268" parent="35" name="notes">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <index id="269" parent="35" name="idx_platforms">
+      <columns>testproject_id
+name</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="270" parent="35" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="271" parent="35" name="idx_platforms">
+      <columns>testproject_id
+name</columns>
+      <underlying-index>idx_platforms</underlying-index>
+    </key>
+    <column id="272" parent="36" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="273" parent="36" name="basename">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="274" parent="36" name="enabled">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="275" parent="36" name="author_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="276" parent="36" name="creation_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <key id="277" parent="36" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="278" parent="37" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="279" parent="37" name="testproject_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="280" parent="37" name="config_key">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="281" parent="37" name="config_type">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="282" parent="37" name="config_value">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="283" parent="37" name="author_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="284" parent="37" name="creation_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <key id="285" parent="37" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="286" parent="38" name="req_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <column id="287" parent="38" name="testcase_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <column id="288" parent="38" name="author_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="289" parent="38" name="creation_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="290" parent="38" name="review_requester_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="291" parent="38" name="review_request_ts">
+      <data-type>timestamp|0</data-type>
+    </column>
+    <index id="292" parent="38" name="req_testcase">
+      <columns>req_id
+testcase_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <column id="293" parent="39" name="req_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="294" parent="39" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="295" parent="39" name="testproject_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="296" parent="39" name="PRIMARY">
+      <columns>req_id
+user_id
+testproject_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="297" parent="40" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="298" parent="40" name="source_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="299" parent="40" name="destination_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="300" parent="40" name="relation_type">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="301" parent="40" name="author_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="302" parent="40" name="creation_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <key id="303" parent="40" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="304" parent="41" name="parent_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="305" parent="41" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="306" parent="41" name="revision">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="307" parent="41" name="req_doc_id">
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="308" parent="41" name="name">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="309" parent="41" name="scope">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="310" parent="41" name="status">
+      <mandatory>1</mandatory>
+      <data-type>char(1)|0</data-type>
+      <default-expression>&apos;V&apos;</default-expression>
+    </column>
+    <column id="311" parent="41" name="type">
+      <data-type>char(1)|0</data-type>
+    </column>
+    <column id="312" parent="41" name="active">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="313" parent="41" name="is_open">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="314" parent="41" name="expected_coverage">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="315" parent="41" name="log_message">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="316" parent="41" name="author_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="317" parent="41" name="creation_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="318" parent="41" name="modifier_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="319" parent="41" name="modification_ts">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="320" parent="41" name="req_revisions_uidx1">
+      <columns>parent_id
+revision</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="321" parent="41" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="322" parent="41" name="req_revisions_uidx1">
+      <columns>parent_id
+revision</columns>
+      <underlying-index>req_revisions_uidx1</underlying-index>
+    </key>
+    <column id="323" parent="42" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="324" parent="42" name="testproject_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="325" parent="42" name="doc_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <index id="326" parent="42" name="req_spec_uk1">
+      <columns>doc_id
+testproject_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="327" parent="42" name="testproject_id">
+      <columns>testproject_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="328" parent="42" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="329" parent="42" name="req_spec_uk1">
+      <columns>doc_id
+testproject_id</columns>
+      <underlying-index>req_spec_uk1</underlying-index>
+    </key>
+    <column id="330" parent="43" name="parent_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="331" parent="43" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="332" parent="43" name="revision">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="333" parent="43" name="doc_id">
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="334" parent="43" name="name">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="335" parent="43" name="scope">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="336" parent="43" name="total_req">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="337" parent="43" name="status">
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="338" parent="43" name="type">
+      <data-type>char(1)|0</data-type>
+    </column>
+    <column id="339" parent="43" name="log_message">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="340" parent="43" name="author_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="341" parent="43" name="creation_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="342" parent="43" name="modifier_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="343" parent="43" name="modification_ts">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="344" parent="43" name="req_specs_revisions_uidx1">
+      <columns>parent_id
+revision</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="345" parent="43" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="346" parent="43" name="req_specs_revisions_uidx1">
+      <columns>parent_id
+revision</columns>
+      <underlying-index>req_specs_revisions_uidx1</underlying-index>
+    </key>
+    <column id="347" parent="44" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="348" parent="44" name="version">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="349" parent="44" name="revision">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="350" parent="44" name="scope">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="351" parent="44" name="status">
+      <mandatory>1</mandatory>
+      <data-type>char(1)|0</data-type>
+      <default-expression>&apos;V&apos;</default-expression>
+    </column>
+    <column id="352" parent="44" name="type">
+      <data-type>char(1)|0</data-type>
+    </column>
+    <column id="353" parent="44" name="active">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="354" parent="44" name="is_open">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="355" parent="44" name="expected_coverage">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="356" parent="44" name="author_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="357" parent="44" name="creation_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="358" parent="44" name="modifier_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="359" parent="44" name="modification_ts">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="360" parent="44" name="log_message">
+      <data-type>text|0</data-type>
+    </column>
+    <key id="361" parent="44" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="362" parent="45" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="363" parent="45" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="364" parent="45" name="type">
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="365" parent="45" name="cfg">
+      <data-type>text|0</data-type>
+    </column>
+    <index id="366" parent="45" name="reqmgrsystems_uidx1">
+      <columns>name</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="367" parent="45" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="368" parent="45" name="reqmgrsystems_uidx1">
+      <columns>name</columns>
+      <underlying-index>reqmgrsystems_uidx1</underlying-index>
+    </key>
+    <column id="369" parent="46" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="370" parent="46" name="srs_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="371" parent="46" name="req_doc_id">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <index id="372" parent="46" name="requirements_req_doc_id">
+      <columns>srs_id
+req_doc_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="373" parent="46" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="374" parent="46" name="requirements_req_doc_id">
+      <columns>srs_id
+req_doc_id</columns>
+      <underlying-index>requirements_req_doc_id</underlying-index>
+    </key>
+    <column id="375" parent="47" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="376" parent="47" name="description">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <index id="377" parent="47" name="rights_descr">
+      <columns>description</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="378" parent="47" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="379" parent="47" name="rights_descr">
+      <columns>description</columns>
+      <underlying-index>rights_descr</underlying-index>
+    </key>
+    <column id="380" parent="48" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="381" parent="48" name="testplan_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="382" parent="48" name="node_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="383" parent="48" name="risk">
+      <mandatory>1</mandatory>
+      <data-type>char(1)|0</data-type>
+      <default-expression>&apos;2&apos;</default-expression>
+    </column>
+    <column id="384" parent="48" name="importance">
+      <mandatory>1</mandatory>
+      <data-type>char(1)|0</data-type>
+      <default-expression>&apos;M&apos;</default-expression>
+    </column>
+    <index id="385" parent="48" name="risk_assignments_tplan_node_id">
+      <columns>testplan_id
+node_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="386" parent="48" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="387" parent="48" name="risk_assignments_tplan_node_id">
+      <columns>testplan_id
+node_id</columns>
+      <underlying-index>risk_assignments_tplan_node_id</underlying-index>
+    </key>
+    <column id="388" parent="49" name="role_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="389" parent="49" name="right_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="390" parent="49" name="PRIMARY">
+      <columns>role_id
+right_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="391" parent="50" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="392" parent="50" name="description">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="393" parent="50" name="notes">
+      <data-type>text|0</data-type>
+    </column>
+    <index id="394" parent="50" name="role_rights_roles_descr">
+      <columns>description</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="395" parent="50" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="396" parent="50" name="role_rights_roles_descr">
+      <columns>description</columns>
+      <underlying-index>role_rights_roles_descr</underlying-index>
+    </key>
+    <column id="397" parent="51" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="398" parent="51" name="step_number">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="399" parent="51" name="actions">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="400" parent="51" name="expected_results">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="401" parent="51" name="active">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="402" parent="51" name="execution_type">
+      <comment>1 -&gt; manual, 2 -&gt; automated</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <key id="403" parent="51" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="404" parent="52" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="405" parent="52" name="tc_external_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="406" parent="52" name="version">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="407" parent="52" name="layout">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="408" parent="52" name="status">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="409" parent="52" name="summary">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="410" parent="52" name="preconditions">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="411" parent="52" name="importance">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;2&apos;</default-expression>
+    </column>
+    <column id="412" parent="52" name="author_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="413" parent="52" name="creation_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="414" parent="52" name="updater_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="415" parent="52" name="modification_ts">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="416" parent="52" name="active">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="417" parent="52" name="is_open">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="418" parent="52" name="execution_type">
+      <comment>1 -&gt; manual, 2 -&gt; automated</comment>
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="419" parent="52" name="estimated_exec_duration">
+      <comment>NULL will be considered as NO DATA Provided by user</comment>
+      <data-type>decimal(6,2)|0</data-type>
+    </column>
+    <key id="420" parent="52" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="421" parent="53" name="testcase_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="422" parent="53" name="keyword_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="423" parent="53" name="PRIMARY">
+      <columns>testcase_id
+keyword_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="424" parent="54" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="425" parent="54" name="source_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="426" parent="54" name="destination_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="427" parent="54" name="relation_type">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="428" parent="54" name="author_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="429" parent="54" name="creation_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <key id="430" parent="54" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="431" parent="55" name="tcversion_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="432" parent="55" name="project_key">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="433" parent="55" name="repository_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="434" parent="55" name="code_path">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="435" parent="55" name="branch_name">
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="436" parent="55" name="commit_id">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <key id="437" parent="55" name="PRIMARY">
+      <columns>tcversion_id
+project_key
+repository_name
+code_path</columns>
+      <primary>1</primary>
+    </key>
+    <column id="438" parent="56" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="439" parent="56" name="testplan_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="440" parent="56" name="platform_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="441" parent="56" name="idx_testplan_platforms">
+      <columns>testplan_id
+platform_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="442" parent="56" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="443" parent="56" name="idx_testplan_platforms">
+      <columns>testplan_id
+platform_id</columns>
+      <underlying-index>idx_testplan_platforms</underlying-index>
+    </key>
+    <column id="444" parent="57" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="445" parent="57" name="testplan_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="446" parent="57" name="tcversion_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="447" parent="57" name="node_order">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="448" parent="57" name="urgency">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5)|0</data-type>
+      <default-expression>&apos;2&apos;</default-expression>
+    </column>
+    <column id="449" parent="57" name="platform_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="450" parent="57" name="author_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="451" parent="57" name="creation_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <index id="452" parent="57" name="testplan_tcversions_tplan_tcversion">
+      <columns>testplan_id
+tcversion_id
+platform_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="453" parent="57" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="454" parent="57" name="testplan_tcversions_tplan_tcversion">
+      <columns>testplan_id
+tcversion_id
+platform_id</columns>
+      <underlying-index>testplan_tcversions_tplan_tcversion</underlying-index>
+    </key>
+    <column id="455" parent="58" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="456" parent="58" name="testproject_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="457" parent="58" name="notes">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="458" parent="58" name="active">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="459" parent="58" name="is_open">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="460" parent="58" name="is_public">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="461" parent="58" name="api_key">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+      <default-expression>&apos;829a2ded3ed0829a2dedd8ab81dfa2c77e8235bc3ed0d8ab81dfa2c77e8235bc&apos;</default-expression>
+    </column>
+    <index id="462" parent="58" name="testplans_api_key">
+      <columns>api_key</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="463" parent="58" name="testplans_testproject_id_active">
+      <columns>testproject_id
+active</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="464" parent="58" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="465" parent="58" name="testplans_api_key">
+      <columns>api_key</columns>
+      <underlying-index>testplans_api_key</underlying-index>
+    </key>
+    <column id="466" parent="59" name="testproject_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="467" parent="59" name="codetracker_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="468" parent="59" name="PRIMARY">
+      <columns>testproject_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="469" parent="60" name="testproject_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="470" parent="60" name="issuetracker_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="471" parent="60" name="PRIMARY">
+      <columns>testproject_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="472" parent="61" name="testproject_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="473" parent="61" name="reqmgrsystem_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <key id="474" parent="61" name="PRIMARY">
+      <columns>testproject_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="475" parent="62" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="476" parent="62" name="notes">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="477" parent="62" name="color">
+      <mandatory>1</mandatory>
+      <data-type>varchar(12)|0</data-type>
+      <default-expression>&apos;#9BD&apos;</default-expression>
+    </column>
+    <column id="478" parent="62" name="active">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="479" parent="62" name="option_reqs">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="480" parent="62" name="option_priority">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="481" parent="62" name="option_automation">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="482" parent="62" name="options">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="483" parent="62" name="prefix">
+      <mandatory>1</mandatory>
+      <data-type>varchar(16)|0</data-type>
+    </column>
+    <column id="484" parent="62" name="tc_counter">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="485" parent="62" name="is_public">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="486" parent="62" name="issue_tracker_enabled">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="487" parent="62" name="code_tracker_enabled">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="488" parent="62" name="reqmgr_integration_enabled">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="489" parent="62" name="api_key">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+      <default-expression>&apos;0d8ab81dfa2c77e8235bc829a2ded3edfa2c78235bc829a27eded3ed0d8ab81d&apos;</default-expression>
+    </column>
+    <index id="490" parent="62" name="testprojects_api_key">
+      <columns>api_key</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="491" parent="62" name="testprojects_id_active">
+      <columns>id
+active</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="492" parent="62" name="testprojects_prefix">
+      <columns>prefix</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="493" parent="62" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="494" parent="62" name="testprojects_prefix">
+      <columns>prefix</columns>
+      <underlying-index>testprojects_prefix</underlying-index>
+    </key>
+    <key id="495" parent="62" name="testprojects_api_key">
+      <columns>api_key</columns>
+      <underlying-index>testprojects_api_key</underlying-index>
+    </key>
+    <column id="496" parent="63" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="497" parent="63" name="details">
+      <data-type>text|0</data-type>
+    </column>
+    <key id="498" parent="63" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="499" parent="64" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="500" parent="64" name="type">
+      <mandatory>1</mandatory>
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="501" parent="64" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="502" parent="64" name="template_data">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="503" parent="64" name="author_id">
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="504" parent="64" name="creation_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="505" parent="64" name="is_public">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <index id="506" parent="64" name="idx_text_templates">
+      <columns>type
+title</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="507" parent="64" name="idx_text_templates">
+      <columns>type
+title</columns>
+      <underlying-index>idx_text_templates</underlying-index>
+    </key>
+    <column id="508" parent="65" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="509" parent="65" name="entry_point">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="510" parent="65" name="start_time">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="511" parent="65" name="end_time">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="512" parent="65" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="513" parent="65" name="session_id">
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <key id="514" parent="65" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="515" parent="66" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="516" parent="66" name="type">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="517" parent="66" name="feature_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="518" parent="66" name="user_id">
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="519" parent="66" name="build_id">
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="520" parent="66" name="deadline_ts">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="521" parent="66" name="assigner_id">
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="522" parent="66" name="creation_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="523" parent="66" name="status">
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <index id="524" parent="66" name="user_assignments_feature_id">
+      <columns>feature_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="525" parent="66" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="526" parent="67" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="527" parent="67" name="title">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="528" parent="67" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <index id="529" parent="67" name="idx_user_group">
+      <columns>title</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="530" parent="67" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="531" parent="67" name="idx_user_group">
+      <columns>title</columns>
+      <underlying-index>idx_user_group</underlying-index>
+    </key>
+    <column id="532" parent="68" name="usergroup_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="533" parent="68" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <index id="534" parent="68" name="idx_user_group_assign">
+      <columns>usergroup_id
+user_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="535" parent="68" name="idx_user_group_assign">
+      <columns>usergroup_id
+user_id</columns>
+      <underlying-index>idx_user_group_assign</underlying-index>
+    </key>
+    <column id="536" parent="69" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="537" parent="69" name="testplan_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="538" parent="69" name="role_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="539" parent="69" name="PRIMARY">
+      <columns>user_id
+testplan_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="540" parent="70" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="541" parent="70" name="testproject_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="542" parent="70" name="role_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <key id="543" parent="70" name="PRIMARY">
+      <columns>user_id
+testproject_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="544" parent="71" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="545" parent="71" name="login">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="546" parent="71" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="547" parent="71" name="role_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="548" parent="71" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="549" parent="71" name="first">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="550" parent="71" name="last">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="551" parent="71" name="locale">
+      <mandatory>1</mandatory>
+      <data-type>varchar(10)|0</data-type>
+      <default-expression>&apos;en_GB&apos;</default-expression>
+    </column>
+    <column id="552" parent="71" name="default_testproject_id">
+      <data-type>int(10)|0</data-type>
+    </column>
+    <column id="553" parent="71" name="active">
+      <mandatory>1</mandatory>
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <column id="554" parent="71" name="script_key">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="555" parent="71" name="cookie_string">
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="556" parent="71" name="auth_method">
+      <data-type>varchar(10)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="557" parent="71" name="creation_ts">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="558" parent="71" name="expiration_date">
+      <data-type>date|0</data-type>
+    </column>
+    <index id="559" parent="71" name="users_cookie_string">
+      <columns>cookie_string</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="560" parent="71" name="users_login">
+      <columns>login</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="561" parent="71" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="562" parent="71" name="users_login">
+      <columns>login</columns>
+      <underlying-index>users_login</underlying-index>
+    </key>
+    <key id="563" parent="71" name="users_cookie_string">
+      <columns>cookie_string</columns>
+      <underlying-index>users_cookie_string</underlying-index>
+    </key>
+    <column id="564" parent="72" name="req_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="565" parent="72" name="version">
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="566" parent="73" name="req_spec_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="567" parent="73" name="testproject_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+    </column>
+    <column id="568" parent="73" name="revision">
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+    <column id="569" parent="74" name="testcase_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="570" parent="74" name="version">
+      <data-type>smallint(5) unsigned|0</data-type>
+    </column>
+  </database-model>
+</dataSource>

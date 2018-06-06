@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c2c21a1d-ae33-4df0-a85d-feb01c006ce8" name="Default" comment="" />
+    <ignored path="Testlink.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Testlink$demoTestlink.coverage" NAME="demoTestlink Coverage Results" MODIFIED="1528170884284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Testlink$dbHandler.coverage" NAME="dbHandler Coverage Results" MODIFIED="1528106388625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - testlink@172.16.1.254" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - testlink@172.16.1.254" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Testlink" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="demoTestlink.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demoTestlink.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="114" column="11" selection-start-line="114" selection-start-column="11" selection-end-line="114" selection-end-column="11" />
+              <folding>
+                <element signature="e#25#40#0" expanded="true" />
+                <marker date="1528170882059" expanded="true" signature="3465:3510" ph="select * fro... nodes_hierarchy" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbHandler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbHandler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+              <folding>
+                <marker date="1528170870940" expanded="true" signature="563:608" ph="select * fro... nodes_hierarchy" />
+                <marker date="1528170870940" expanded="true" signature="648:649" ph="select * fro... nodes_hierarchy" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DATABASE/9a52f6c9-bd85-45f0-91b7-e845eb7f7f65" pinned="false" current-in-tab="false">
+        <entry file="uml://DATABASE/9a52f6c9-bd85-45f0-91b7-e845eb7f7f65">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>DATABASE</ID>
+              <OriginalElement>9a52f6c9-bd85-45f0-91b7-e845eb7f7f65</OriginalElement>
+              <nodes />
+              <notes />
+              <edges />
+              <settings layout="Hierarchic Group" zoom="1.0" x="240.0" y="240.0" />
+              <SelectedNodes />
+              <Categories />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testlink.nodes_hierarchy" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/45162148/9a52f6c9-bd85-45f0-91b7-e845eb7f7f65/testlink.nodes_hierarchy">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9a52f6c9-bd85-45f0-91b7-e845eb7f7f65/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbManual.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Interface/gitdir/Interface2.0/dbManual.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+              <folding>
+                <marker date="1528100455843" expanded="true" signature="2798:2821" ph="insert into table... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interactive_case.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Interface/gitdir/Interface2.0/testcase/interactive_case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1139">
+              <caret line="73" column="41" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="27" />
+              <folding>
+                <marker date="1525575072707" expanded="true" signature="350:439" ph="update inter... " />
+                <marker date="1525575072707" expanded="true" signature="973:1025" ph="select args interactive_case" />
+                <marker date="1525575072707" expanded="true" signature="1317:1395" ph="select id, u... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="2595:2693" ph="select id, u... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="4133:4266" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="5704:5782" ph="select id, u... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="6609:6707" ph="select id, u... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="7515:7593" ph="select id, u... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="8565:8639" ph="select user_... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="9462:9540" ph="select id, u... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="11161:11239" ph="select id, u... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="12837:12970" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="13135:13217" ph="select opus_... opus_comment" />
+                <marker date="1525575072707" expanded="true" signature="14486:14619" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="14784:14866" ph="select opus_... opus_comment" />
+                <marker date="1525575072707" expanded="true" signature="16122:16255" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="17727:17803" ph="select opus_... opus_comment" />
+                <marker date="1525575072707" expanded="true" signature="17997:18041" ph="select user_... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="18927:19005" ph="select opus_... opus_comment" />
+                <marker date="1525575072707" expanded="true" signature="19165:19209" ph="select user_... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="20104:20148" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="20377:20453" ph="select id, u... opus_comment" />
+                <marker date="1525575072707" expanded="true" signature="21565:21609" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="21760:21827" ph="select id fr... opus_comment" />
+                <marker date="1525575072707" expanded="true" signature="22738:22832" ph="select id, o... opus_comment" />
+                <marker date="1525575072707" expanded="true" signature="23868:23962" ph="select id, o... opus_comment" />
+                <marker date="1525575072707" expanded="true" signature="25960:26075" ph="select opus_... opus_comment" />
+                <marker date="1525575072707" expanded="true" signature="27198:27343" ph="select opus_... opus_comment" />
+                <marker date="1525575072707" expanded="true" signature="31378:31472" ph="select id, o... opus_comment" />
+                <marker date="1525575072707" expanded="true" signature="32449:32516" ph="select comme... opus_comment_like" />
+                <marker date="1525575072707" expanded="true" signature="32687:32731" ph="select user_... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="33465:33559" ph="select id, o... opus_comment" />
+                <marker date="1525575072707" expanded="true" signature="33699:33758" ph="select count... opus_comment" />
+                <marker date="1525575072707" expanded="true" signature="34684:34778" ph="select id, o... opus_comment" />
+                <marker date="1525575072707" expanded="true" signature="34918:34977" ph="select count... opus_comment" />
+                <marker date="1525575072707" expanded="true" signature="39954:40054" ph="select id, u... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="40292:40342" ph="select liste... song_attach" />
+                <marker date="1525575072707" expanded="true" signature="41326:41426" ph="select id, u... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="41664:41714" ph="select liste... song_attach" />
+                <marker date="1525575072707" expanded="true" signature="42507:42607" ph="select id, u... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="43432:43532" ph="select id, u... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="44384:44484" ph="select id, u... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="45580:45738" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="46833:46991" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="48177:48335" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="49293:49364" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="51124:51217" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="53136:53273" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="54614:54721" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="55773:55880" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="56778:56885" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="57804:57911" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="58841:58950" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="60871:60955" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="61837:61901" ph="select id fr... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="67074:67121" ph="select opus_... opus_score" />
+                <marker date="1525575072707" expanded="true" signature="67251:67351" ph="select id, u... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="68467:68585" ph="select id, u... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="69498:69616" ph="select id, u... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="70832:70882" ph="SELECT count... opus_comment" />
+                <marker date="1525575072707" expanded="true" signature="71721:71780" ph="SELECT creat... song_basic" />
+                <marker date="1525575072707" expanded="true" signature="72684:72746" ph="SELECT is_ta... opus_share_record" />
+                <marker date="1525575072707" expanded="true" signature="73113:73169" ph="update inter... " />
+                <marker date="1525575072707" expanded="true" signature="73889:73956" ph="SELECT count... opus_thumbs_up" />
+                <marker date="1525575072707" expanded="true" signature="74796:74861" ph="SELECT count... opus_collect" />
+                <marker date="1525575072707" expanded="true" signature="75709:75802" ph="SELECT liste... song_attach" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tool.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Interface/gitdir/Interface2.0/tool.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1598">
+              <caret line="98" column="36" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../Interface/gitdir/Interface2.0/dbManual.py" />
+        <option value="D:/software/Anaconda/Lib/site-packages/MySQLdb/cursors.py" />
+        <option value="dbtable:/45162148/9a52f6c9-bd85-45f0-91b7-e845eb7f7f65/testlink.nodes_hierarchy" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9a52f6c9-bd85-45f0-91b7-e845eb7f7f65/console.sql" />
+        <option value="$PROJECT_DIR$/dbHandler.py" />
+        <option value="$PROJECT_DIR$/demoTestlink.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="563" />
+    <option name="y" value="61" />
+    <option name="width" value="1378" />
+    <option name="height" value="733" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Testlink" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Testlink" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Testlink" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+  </component>
+  <component name="RunManager" selected="Python.demoTestlink">
+    <configuration default="false" name="demoTestlink" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Testlink" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/demoTestlink.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="dbHandler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Testlink" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dbHandler.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Testlink" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Testlink" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Testlink" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Testlink" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="Testlink" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Testlink" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Testlink" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Testlink" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Testlink" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Testlink" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python.demoTestlink" />
+      <item index="1" class="java.lang.String" itemvalue="Python.dbHandler" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.demoTestlink" />
+        <item index="1" class="java.lang.String" itemvalue="Python.dbHandler" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2c21a1d-ae33-4df0-a85d-feb01c006ce8" name="Default" comment="" />
+      <created>1527581944414</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527581944414</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="563" y="61" width="1378" height="733" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10499266" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20631425" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32263243" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/demoTestlink.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#40#0" expanded="true" />
+            <marker date="1528170882059" expanded="true" signature="3465:3510" ph="select * fro... nodes_hierarchy" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1528170870940" expanded="true" signature="563:608" ph="select * fro... nodes_hierarchy" />
+            <marker date="1528170870940" expanded="true" signature="648:649" ph="select * fro... nodes_hierarchy" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Interface/gitdir/Interface2.0/dbManual.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <marker date="1528100455843" expanded="true" signature="2798:2821" ph="insert into table... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Interface/gitdir/Interface2.0/testcase/interactive_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="41" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="27" />
+          <folding>
+            <marker date="1525575072707" expanded="true" signature="350:439" ph="update inter... " />
+            <marker date="1525575072707" expanded="true" signature="973:1025" ph="select args interactive_case" />
+            <marker date="1525575072707" expanded="true" signature="1317:1395" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="2595:2693" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="4133:4266" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="5704:5782" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="6609:6707" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="7515:7593" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="8565:8639" ph="select user_... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="9462:9540" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="11161:11239" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="12837:12970" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="13135:13217" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="14486:14619" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="14784:14866" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="16122:16255" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="17727:17803" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="17997:18041" ph="select user_... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="18927:19005" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="19165:19209" ph="select user_... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="20104:20148" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="20377:20453" ph="select id, u... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="21565:21609" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="21760:21827" ph="select id fr... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="22738:22832" ph="select id, o... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="23868:23962" ph="select id, o... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="25960:26075" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="27198:27343" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="31378:31472" ph="select id, o... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="32449:32516" ph="select comme... opus_comment_like" />
+            <marker date="1525575072707" expanded="true" signature="32687:32731" ph="select user_... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="33465:33559" ph="select id, o... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="33699:33758" ph="select count... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="34684:34778" ph="select id, o... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="34918:34977" ph="select count... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="39954:40054" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="40292:40342" ph="select liste... song_attach" />
+            <marker date="1525575072707" expanded="true" signature="41326:41426" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="41664:41714" ph="select liste... song_attach" />
+            <marker date="1525575072707" expanded="true" signature="42507:42607" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="43432:43532" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="44384:44484" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="45580:45738" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="46833:46991" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="48177:48335" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="49293:49364" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="51124:51217" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="53136:53273" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="54614:54721" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="55773:55880" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="56778:56885" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="57804:57911" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="58841:58950" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="60871:60955" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="61837:61901" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="67074:67121" ph="select opus_... opus_score" />
+            <marker date="1525575072707" expanded="true" signature="67251:67351" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="68467:68585" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="69498:69616" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="70832:70882" ph="SELECT count... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="71721:71780" ph="SELECT creat... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="72684:72746" ph="SELECT is_ta... opus_share_record" />
+            <marker date="1525575072707" expanded="true" signature="73113:73169" ph="update inter... " />
+            <marker date="1525575072707" expanded="true" signature="73889:73956" ph="SELECT count... opus_thumbs_up" />
+            <marker date="1525575072707" expanded="true" signature="74796:74861" ph="SELECT count... opus_collect" />
+            <marker date="1525575072707" expanded="true" signature="75709:75802" ph="SELECT liste... song_attach" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Interface/gitdir/Interface2.0/tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="98" column="36" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoTestlink.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#40#0" expanded="true" />
+            <marker date="1528170882059" expanded="true" signature="3465:3510" ph="select * fro... nodes_hierarchy" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1528170870940" expanded="true" signature="563:608" ph="select * fro... nodes_hierarchy" />
+            <marker date="1528170870940" expanded="true" signature="648:649" ph="select * fro... nodes_hierarchy" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Interface/gitdir/Interface2.0/config/runconfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Interface/gitdir/Interface2.0/testcase/interactive_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1525575072707" expanded="true" signature="350:439" ph="update inter... " />
+            <marker date="1525575072707" expanded="true" signature="973:1025" ph="select args interactive_case" />
+            <marker date="1525575072707" expanded="true" signature="1317:1395" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="2595:2693" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="4133:4266" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="5704:5782" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="6609:6707" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="7515:7593" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="8565:8639" ph="select user_... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="9462:9540" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="11161:11239" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="12837:12970" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="13135:13217" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="14486:14619" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="14784:14866" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="16122:16255" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="17727:17803" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="17997:18041" ph="select user_... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="18927:19005" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="19165:19209" ph="select user_... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="20104:20148" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="20377:20453" ph="select id, u... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="21565:21609" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="21760:21827" ph="select id fr... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="22738:22832" ph="select id, o... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="23868:23962" ph="select id, o... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="25960:26075" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="27198:27343" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="31378:31472" ph="select id, o... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="32449:32516" ph="select comme... opus_comment_like" />
+            <marker date="1525575072707" expanded="true" signature="32687:32731" ph="select user_... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="33465:33559" ph="select id, o... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="33699:33758" ph="select count... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="34684:34778" ph="select id, o... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="34918:34977" ph="select count... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="39954:40054" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="40292:40342" ph="select liste... song_attach" />
+            <marker date="1525575072707" expanded="true" signature="41326:41426" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="41664:41714" ph="select liste... song_attach" />
+            <marker date="1525575072707" expanded="true" signature="42507:42607" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="43432:43532" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="44384:44484" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="45580:45738" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="46833:46991" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="48177:48335" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="49293:49364" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="51124:51217" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="53136:53273" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="54614:54721" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="55773:55880" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="56778:56885" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="57804:57911" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="58841:58950" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="60871:60955" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="61837:61901" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="67074:67121" ph="select opus_... opus_score" />
+            <marker date="1525575072707" expanded="true" signature="67251:67351" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="68467:68585" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="69498:69616" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="70832:70882" ph="SELECT count... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="71721:71780" ph="SELECT creat... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="72684:72746" ph="SELECT is_ta... opus_share_record" />
+            <marker date="1525575072707" expanded="true" signature="73113:73169" ph="update inter... " />
+            <marker date="1525575072707" expanded="true" signature="73889:73956" ph="SELECT count... opus_thumbs_up" />
+            <marker date="1525575072707" expanded="true" signature="74796:74861" ph="SELECT count... opus_collect" />
+            <marker date="1525575072707" expanded="true" signature="75709:75802" ph="SELECT liste... song_attach" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Interface/gitdir/Interface2.0/dbManual.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="93" column="36" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="36" />
+          <folding>
+            <marker date="1528100455843" expanded="true" signature="2798:2821" ph="insert into table... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Anaconda/Lib/site-packages/testlink/testlinkapi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="77" column="30" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoTestlink.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#40#0" expanded="true" />
+            <marker date="1528170882059" expanded="true" signature="3465:3510" ph="select * fro... nodes_hierarchy" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Anaconda/Lib/site-packages/testlink/testlinkapi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="77" column="30" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoTestlink.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#40#0" expanded="true" />
+            <marker date="1528170882059" expanded="true" signature="3465:3510" ph="select * fro... nodes_hierarchy" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Anaconda/Lib/xmlrpclib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21029">
+          <caret line="1242" column="0" selection-start-line="1242" selection-start-column="0" selection-end-line="1242" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Anaconda/Lib/site-packages/testlink/testlinkdecorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1853">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Anaconda/Lib/site-packages/testlink/testlinkapigeneric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11730">
+          <caret line="690" column="33" selection-start-line="690" selection-start-column="8" selection-end-line="690" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Anaconda/Lib/site-packages/testlink/testlinkapi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="138" column="33" selection-start-line="138" selection-start-column="17" selection-end-line="138" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Anaconda/Lib/site-packages/testlink/testlinkhelper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Anaconda/Lib/site-packages/testlink/testlinkapigeneric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="425" column="22" selection-start-line="425" selection-start-column="8" selection-end-line="425" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Anaconda/Lib/xmlrpclib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="1242" column="0" selection-start-line="1242" selection-start-column="0" selection-end-line="1242" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Anaconda/Lib/site-packages/testlink/testlinkdecorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Interface/gitdir/Interface2.0/config/DBConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Interface/gitdir/Interface2.0/config/runconfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Anaconda/Lib/site-packages/testlink/testlinkapi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="77" column="30" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Interface/gitdir/Interface2.0/tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="98" column="36" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Interface/gitdir/Interface2.0/testcase/interactive_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="73" column="41" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="27" />
+          <folding>
+            <marker date="1525575072707" expanded="true" signature="350:439" ph="update inter... " />
+            <marker date="1525575072707" expanded="true" signature="973:1025" ph="select args interactive_case" />
+            <marker date="1525575072707" expanded="true" signature="1317:1395" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="2595:2693" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="4133:4266" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="5704:5782" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="6609:6707" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="7515:7593" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="8565:8639" ph="select user_... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="9462:9540" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="11161:11239" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="12837:12970" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="13135:13217" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="14486:14619" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="14784:14866" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="16122:16255" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="17727:17803" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="17997:18041" ph="select user_... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="18927:19005" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="19165:19209" ph="select user_... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="20104:20148" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="20377:20453" ph="select id, u... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="21565:21609" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="21760:21827" ph="select id fr... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="22738:22832" ph="select id, o... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="23868:23962" ph="select id, o... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="25960:26075" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="27198:27343" ph="select opus_... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="31378:31472" ph="select id, o... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="32449:32516" ph="select comme... opus_comment_like" />
+            <marker date="1525575072707" expanded="true" signature="32687:32731" ph="select user_... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="33465:33559" ph="select id, o... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="33699:33758" ph="select count... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="34684:34778" ph="select id, o... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="34918:34977" ph="select count... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="39954:40054" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="40292:40342" ph="select liste... song_attach" />
+            <marker date="1525575072707" expanded="true" signature="41326:41426" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="41664:41714" ph="select liste... song_attach" />
+            <marker date="1525575072707" expanded="true" signature="42507:42607" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="43432:43532" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="44384:44484" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="45580:45738" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="46833:46991" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="48177:48335" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="49293:49364" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="51124:51217" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="53136:53273" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="54614:54721" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="55773:55880" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="56778:56885" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="57804:57911" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="58841:58950" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="60871:60955" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="61837:61901" ph="select id fr... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="67074:67121" ph="select opus_... opus_score" />
+            <marker date="1525575072707" expanded="true" signature="67251:67351" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="68467:68585" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="69498:69616" ph="select id, u... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="70832:70882" ph="SELECT count... opus_comment" />
+            <marker date="1525575072707" expanded="true" signature="71721:71780" ph="SELECT creat... song_basic" />
+            <marker date="1525575072707" expanded="true" signature="72684:72746" ph="SELECT is_ta... opus_share_record" />
+            <marker date="1525575072707" expanded="true" signature="73113:73169" ph="update inter... " />
+            <marker date="1525575072707" expanded="true" signature="73889:73956" ph="SELECT count... opus_thumbs_up" />
+            <marker date="1525575072707" expanded="true" signature="74796:74861" ph="SELECT count... opus_collect" />
+            <marker date="1525575072707" expanded="true" signature="75709:75802" ph="SELECT liste... song_attach" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Interface/gitdir/Interface2.0/dbManual.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <marker date="1528100455843" expanded="true" signature="2798:2821" ph="insert into table... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Anaconda/Lib/site-packages/MySQLdb/cursors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="845">
+          <caret line="74" column="23" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/software/Anaconda/Lib/site-packages/MySQLdb/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/9a52f6c9-bd85-45f0-91b7-e845eb7f7f65">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>9a52f6c9-bd85-45f0-91b7-e845eb7f7f65</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="240.0" y="240.0" />
+          <SelectedNodes />
+          <Categories />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/45162148/9a52f6c9-bd85-45f0-91b7-e845eb7f7f65/testlink.nodes_hierarchy">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9a52f6c9-bd85-45f0-91b7-e845eb7f7f65/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbHandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding>
+            <marker date="1528170870940" expanded="true" signature="563:608" ph="select * fro... nodes_hierarchy" />
+            <marker date="1528170870940" expanded="true" signature="648:649" ph="select * fro... nodes_hierarchy" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoTestlink.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="114" column="11" selection-start-line="114" selection-start-column="11" selection-end-line="114" selection-end-column="11" />
+          <folding>
+            <element signature="e#25#40#0" expanded="true" />
+            <marker date="1528170882059" expanded="true" signature="3465:3510" ph="select * fro... nodes_hierarchy" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
